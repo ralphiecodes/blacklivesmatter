@@ -1,12 +1,22 @@
-body {
-  background: url("/blacklivesmatter/blmbackground.jpg") no-repeat;
-  background-attachment: scroll;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
+
 #navbar {
   overflow: hidden;
+  position: fixed;
+  width: 100%;
   background-color: #ffd700;
-  border: 0px;
-  margin: -8px !important;
+  top: 0;
+  z-index: 2;
+  block-size: 48px;
+}
+#navbar a:hover {
+  background: #ddd;
+  background-color: black;
+  color: yellow;
 }
 
 /* Font */
@@ -23,20 +33,18 @@ body {
   color: #1a1a00;
   text-align: center;
   padding: 14px;
+  padding-top: 16px;
   text-decoration: none;
 }
 /*NavBar Text */
+/* Black Lives Matter Text */
 #navbar text {
   font-family: "street", sans-serif;
   text-align: center;
   padding: 6px;
+  padding-top: 7px;
   float: left;
   font-size: 30px;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -46,11 +54,38 @@ body {
   width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+.main {
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
 
-.slides {
-  display: none;
+.blm-photo1,
+.blm-photo2,
+.blm-photo3,
+.blm-photo4 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blm-photo1 {
+  background-image: url("photos/actual_blm_photo.jpg");
+  min-height: 30%;
+}
+
+.blm-photo2 {
+  background-image: url("photos/chadwick.jpg");
+  min-height: 400px;
+}
+
+.blm-photo3 {
+  background-image: url("photos/george.jpg");
+  min-height: 400px;
+}
+
+.blm-photo4 {
+  background-image: url("photos/paris.jpg");
+  min-height: 400px;
 }

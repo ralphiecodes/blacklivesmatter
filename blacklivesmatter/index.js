@@ -17,18 +17,5 @@ function scrollingNavBar() {
   }
 }
 
-let slideIndex = 0;
-movingSlideShow();
 
-function movingSlideShow() {
-  let slidePics = document.getElementByClassName("slides");
-  for (let i = 0; i < slidePics.length; i++) {
-    slidePics[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slidePics.length) {
-    slideIndex = 1;
-  }
-  slidePics[slideIndex - 1].style.display = "block";
-  setTimeout(movingSlideShow, 2000);
-}
+
