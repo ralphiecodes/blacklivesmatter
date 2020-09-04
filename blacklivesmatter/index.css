@@ -2,6 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
+  font-family: "street", sans-serif;
 }
 
 #navbar {
@@ -16,7 +17,7 @@ html {
 #navbar a:hover {
   background: #ddd;
   background-color: black;
-  color: yellow;
+  color: #ffd700;
 }
 
 /* Font */
@@ -62,7 +63,8 @@ html {
 .blm-photo1,
 .blm-photo2,
 .blm-photo3,
-.blm-photo4 {
+.blm-photo4,
+.coding {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -86,6 +88,58 @@ html {
 }
 
 .blm-photo4 {
-  background-image: url("photos/paris.jpg");
+  background-image: url("photos/black_lives.jpg");
   min-height: 400px;
+}
+.coding {
+  background-image: url("photos/coding.jpg");
+  min-height: 350px;
+}
+#box1 {
+  padding: 10px;
+  background-color: #ffd700;
+}
+#box2 {
+  padding: 10px;
+  background-color: #ffd700;
+}
+
+#me {
+  width: 75px;
+  height: 75px;
+}
+
+section #services li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+section #services li div {
+  width: 40px;
+  height: 40px;
+  color: #74d4b3;
+  font-size: 2em;
+  text-align: center;
+  line-height: 45px;
+  background-color: #1a1a00;
+  transition: all 0.5s ease;
+}
+section #services li a {
+  color: #ffd700;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #services li span {
+  width: 120px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: #1a1a00;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
 }
